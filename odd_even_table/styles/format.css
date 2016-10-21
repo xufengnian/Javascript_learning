@@ -1,0 +1,36 @@
+body {
+	font-family: "Helvetica","Arial",sans-serif;
+	background-color: #fff;
+	color: #000;
+}
+table {
+	margin:auto;
+	border: 1px solid #699;
+}
+caption {
+	margin:auto;
+	padding: .2em;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+th {
+	font-weight: normal;
+	font-style: italic;
+	text-align: left;
+	border: 1px dotted #699;
+	background-color: #9cc;
+	color: #000;
+}
+th,td {
+	width:10em;
+	padding: .5em;
+}
+/*浏览器支持CSS3时，想让表格的单双行显示颜色不一样添加如下代码即可，若不支持CSS3,则需要使用javascript来辅助
+tr:nth-child(odd) {background-color: #ffc;}
+tr:nth-child(even) {background-color: #fff;}
+*/
+/*浏览器支持CSS3时，想让鼠标停在哪一行哪一行就加粗时，添加如下代码即可，若不支持CSS3,则需要使用javascript来辅助
+tr:hover {
+	font-weight: bold;
+}
+*/
