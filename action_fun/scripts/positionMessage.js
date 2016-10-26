@@ -13,7 +13,10 @@ function positionMessage() {
 	elem.style.left = "50px";//左边距和上边距足以确定显示位置
 	elem.style.top = "100px";//脚本加载完成即执行
 	//此处删去调用moveMessage()函数的代码
+	moveElement("message",200,200,10);//抽象成对html任意元素节点的移动
 }
+addLoadEvent(positionMessage);
+/*
 function moveMessage() {
 	if(!document.getElementById)return false;
 	if(!document.getElementById("message"))return false;
@@ -39,5 +42,5 @@ function moveMessage() {
 		elem.style.top = ypos +"px";
 		movement = setTimeout("moveMessage()",10);//每隔10毫秒调用一次moveMessage函数来移动
 }
-addLoadEvent(positionMessage);
-addLoadEvent(moveMessage);//此处加上加载moveMessage函数的代码
+*/
+//addLoadEvent(moveMessage);//此处加上加载moveMessage函数的代码
